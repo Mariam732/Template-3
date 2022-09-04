@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Temp2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="css/all.css" rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+
+<style>
+
+  /* start nav */
+    .m{
+        margin-left: 30%;
+    }
+    .navbar-nav .show > .nav-link, .navbar-nav .nav-link.active {
+    color: white;
+}
+.nav-link {
+    
+    color: white;}
+
+  .navbar{
+    padding: 2px 4px;
+  }
+  .navbar-nav .show > .nav-link, .navbar-nav .nav-link.active {
+    color: white;
+    margin-right: 20px;
+}
+
+  .btu{
+    margin-left: 1%;
+    position: relative;
+    border-radius: 8px;
+
+  }
+  .btu a{
+    color: whitesmoke;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+  }
+  .btu a i{
+    margin-right: 9px;
+  }
+
+  .btu::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(54, 187, 201,0.6);
+    transition: all 0.3s ease-in;
+  }
+  .btu:hover:before{
+    width: 100%;
+  }
+
+  .navbar-nav .show > .nav-link, .navbar-nav .nav-link.active {
+    color: white;
+    margin-right: 20px;
+    font-size: 16px;
+    padding: 15px;
+    position: relative;
+}
+.navbar-nav .show > .nav-link, .navbar-nav .nav-link.active::before{
+content: "";
+position: absolute;
+bottom: -19px;
+left: 0;
+width: 0%;
+height: 3px;
+background-color: white;
+transition: all 0.3s ease-in;
+}
+.navbar-nav .show > .nav-link, .navbar-nav .nav-link.active:hover:before{
+  width: 100%;
+
+}
+.nav-link {
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    position: relative;
+}
+.nav-link::before{
+  content: "";
+position: absolute;
+bottom: -19px;
+left: 0;
+width: 0%;
+height: 3px;
+background-color: white;
+transition: all 0.3s ease-in;
+}
+.nav-link:hover:before{
+  width: 100%;
+}
+/* end nav */
+
+/* start carsol */
+.info h1 , h4{
+  color: blue;
+  margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+.btnn {
+    padding: 12px 24px 13px 24px;
+    background-color: #5db417;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+
+}
+
+.header .carousel-item img{
+  width: 100%;
+}
+.info{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+.btnn{
+  margin-left: 30%;
+  
+}
+
+.header.carousel-item img{
+  filter: brightness(0.8);
+}
+
+/* end carsol */
+
+/* start calender sec */
+
+
+.ro-1{
+    margin: 0px;
+    background-color:#0657a8 ;
+    
+}
+
+
+
+.working-hours {
+    background-color: #e5e5e5;
+    
+}
+.work-img {
+    padding: 14px 0 22px 0;
+}
+.work-img:nth-child(2) {
+    border-bottom: 1px solid #00000052;
+}
+.work-img:nth-child(1) {
+    border-bottom: 1px solid #00000052;
+}
+.work-img img {
+    width: 13%;
+    padding: 1px 12px 4px 6px;
+}
+
+.contact-details {
+    padding: 25px 23px 28px 23px;
+    background-color: #5db417;
+    color: white;
+}
+
+.contact {
+    padding: 27px 0 14px 0;
+    margin: 0;
+}
+
+.contact li {
+    list-style: none;
+    font-size: 15px;
+    margin-bottom: 12px;
+    line-height: 28px;
+    border-bottom: 1px solid #fff;
+    padding: 0 0 2px 0;
+}
+
+.contact-details a {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    padding: 11px 40px 11px 40px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+}
+
+.col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.appointment {
+    padding: 25px 23px 28px 23px;
+    background-color: #e5e5e5;
+}
+.request {
+    padding: 33px 0 4px 0;
+    border-bottom: 1px solid #00000052;
+    margin: 0px 0 97px 0;
+}
+
+.request p {
+    padding: 0 35px 0 34px;
+    display: flex;
+}
+
+.request img {
+    WIDTH: 12%;
+    float: left;
+}
+
+.appointment a {
+    background-color: #5db417;
+    color: white;
+    text-decoration: none;
+    padding: 11px 60px 11px 60px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+i.fa.fa-arrow-right {
+    padding: 0 0 0 13px;
+}
+
+/* end calender sec */
+
+/* start about us */
+.about-img {
+    padding: 61px 0 61px 0;
+}
+
+.text-img {
+    display: flex;
+    padding: 50px 0 20px 0;
+}
+.about-text {
+    padding: 0 0 47px 0;
+}
+.about-img img {
+    width: 94%;
+}
+
+.text-img h5 {
+    padding: 11px 0 0 13px;
+    margin: 0;
+    color: #0657a8;
+}
+.text-img img {
+    width: 7%;
+}
+
+.about-text h2 {
+    font-size: 39px;
+    padding: 0 0 20px 0;
+}
+
+.about-text p {
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+.started {
+    background-color: #0657a8 ;
+    color: white;
+    padding: 18px 36px 18px 36px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.about-x{
+  margin-top: 4%;
+}
+
+/* end about us */
+
+/*  start home our service */
+.home-service {
+    background-image: url(img/home-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.home-service:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.pb-90 {
+    padding-bottom: 90px;
+}
+.pt-90 {
+    padding-top: 90px;
+}
+
+.our-service {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.our-service h5 {
+    padding-bottom: 10px;
+    font-size: 17px;
+    
+}
+.our-service h2 {
+    padding-bottom: 12px;
+    font-size: 37px;
+    
+}
+.xxx{
+  position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.yyy{
+  position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+.testing {
+    padding: 25px;
+    position: relative;
+    background-color: white;
+    border-radius: 6px;
+}
+.testing-number:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #00000052;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 55% 0% 94px 174%;
+    border-bottom-right-radius: 123px 42px;
+}
+.testing-text h1{
+  color: #0657a8;
+}
+.testing-text h4{
+  color: black;
+}
+
+.se{
+  border-right: 5px solid #0657a8;
+  border-bottom: 5px solid #0657a8;
+  border-radius: 10px;
+}
+
+/*  end home our service */
+
+/*  start choos us */
+.choose-us {
+    position: relative;
+    margin-bottom: 90px;
+    padding: 0 16px;
+}
+.choose-us {
+    
+    background-color: #0657a8;
+    
+}
+
+.pt-90 {
+    padding-top: 90px;
+}
+
+.why-choose {
+    color: white;
+    padding: 0;
+}
+.why-choose-text {
+    border-left: 6px solid #F9A626;
+    padding: 0 0px 5px 20px;
+    margin-bottom: 22px;
+}
+.why-choose-text h4 {
+    color: #F9A626;
+    font-size: 20px;
+}
+.why-choose-list {
+    padding: 20px 0 0px 10px;
+}
+
+.why-choose-list li{
+  list-style-type:none ;
+}
+
+
+.why-choose-list h2 {
+    font-size: 22px;
+    float: left;
+    background-color: #f9a626;
+    padding: 2px 6px 2px 6px;
+    margin: 6px 20px 0 0;
+    box-shadow: 6px 6px 5px #e5e5e5;
+}
+ .why-choose-img {
+    background-image: url(img/beautiful-with-perfect-smile.jpg);
+    background-size: cover;
+    height: 100%;
+} 
+
+/* end choose us */
+
+
+/*  start book your visit */
+
+.book-your-visit {
+    background-image: url(img/booking-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 75%;
+    margin: auto;
+    padding: 20px 25px 20px 25px;
+    margin-bottom: 50px;
+}
+.book-your-visit:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(6 87 168 / 70%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.col-sm-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.emergency {
+    padding: 61px 0 0 0;
+    color: white;
+    margin-top: 25%;
+}
+.xxx{
+  position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.form-control {
+  width: 60%;
+}
+input.form-control {
+    background-color: #133d66;
+    border: none;
+    color: white;
+    height: 60px;
+    border-radius: 0px;
+}
+.bbtt {
+    width: 60%;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 0px;
+    background-color: #133d66;
+    border: none;
+    color: white;
+}
+
+
+/*  end book your visit */
+
+/* start footer */
+.footer-section.pt-90.pb-60 {
+    background-color: #0657a8;
+    padding-bottom: 0px;
+}
+.footer {
+    color: white;
+    padding: 0 0 56px 0;
+}
+
+.footer li {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 8px 0 13px 0;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.h-1 {
+    width: 33%;
+    height: 5px;
+    background-color: white;
+}
+.h-2 {
+    width: 42%;
+    height: 5px;
+    background-color: white;
+}
+.h-3 {
+    width: 25%;
+    height: 5px;
+    background-color: white;
+}
+
+hr {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
+
+.copy {
+    color: #bbb5b5;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+}
+
+.copy li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 0px 0px 0;
+}
+.copy a {
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: 35px;
+    height: 35px;
+    float: left;
+    text-align: center;
+    line-height: 26px;
+}
+.ii{
+  width: 40%;
+  height: 40%;
+}
+
+.copy span {
+    float: right;
+    margin-left: 50%;
+}
+
+
+
+
+
+/* end footer */
+    
+</style>
+<body>
+    
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-lg bg-info fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/lo.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+           
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0 m">
+              <li class="nav-item ">
+                <a class="nav-link active " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Services</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              </li>
+            
+            </ul>
+            <button class="btn btu btn-outline-primary d-none d-lg-block">
+                <a href="#"><i class="fa-solid fa-phone"></i>0104563256</a>
+            </button>
+            
+          </div>
+        </div>
+      </nav>
+    <!-- end nav -->
+
+    <!-- start carsoul sec -->
+    <section class="header">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner.png" class="d-block w-100" alt="...">
+            <div class="info">
+              <h4>We work for take care of your teeth</h4>
+              <h1>True Dental Lab<br> For Your Family</h1>
+              <button class="btn btu btn-outline-primary d-none d-lg-block btnn">Explore All <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/smile.jpg" class="d-block w-100" alt="...">
+            <div class="info">
+              <h4>We work for take care of your teeth</h4>
+              <h1>True Dental Lab<br> For Your Family</h1>
+              <button class="btn btu btn-outline-primary d-none d-lg-block btnn">Explore All <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+   <!-- end carsoul sec -->
+
+   <!-- start calender sec -->
+   <section class="calender">
+    <div class="">
+      <div class="row ro-1 ">
+        <div class="col-md-4 pd-0">
+          <div class="working-hours">
+            <h2>WORKING HOURS</h2>
+            <ul class="Working">
+              <li class="work-img">
+                <img src="img/clock.png">
+                <p>MONDAY-FRIDAY 08:00Am-07:00PM</p>
+              </li>
+              <li class="work-img">
+                <img src="img/clock.png">
+                <p>SATURDAY 11:00Am-03:00PM</p>
+              </li>
+              <li class="work-img">
+                <img src="img/clock.png"><p>SUNDAY
+                CLOSED</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 pd-0">
+          <div class="contact-details">
+            <h2>CONTACT DETAILS</h2>
+            <ul class="contact">
+              <li>
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <p>4500 Mercntile plaza,Suite 300, Fort Worth,TX,76137,USA</p>
+              </li>
+              <li>
+                <span><i class="fa fa-phone"></i></span>
+                <p>+1(817) 901 3377<br> +1(817) *** 3377 </p>
+              </li>
+            </ul>
+            <a href="#">GET DIRECTION ON THE MAP <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 pd-0">
+          <div class="appointment">
+            <h2>REQUEST AN APPOINTMENT</h2>
+            <div class="request">
+              <img src="img/clock.png">
+              <p>CHOOSE THE  RIGHT TIME AND DATE FOR YOU </p>
+            </div>
+            <a href="#">MAKE AN APPOINTMENT<i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+   </section>
+   <!-- end calender sec -->
+
+   <!-- start about us  sec -->
+   <section class="about_us">
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="about-img"><img src="img/doctor.png"></div>
+      </div>
+      <div class="col-sm-6 about-x">
+        <div class="about-text">
+          <div class="text-img">
+          <img src="img/about-img.png">
+          <h5>ABOUT US</h5>
+          </div>
+          <h2>We're Open and Welcoming Patients Your New Smile</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book.
+  					it has survived not only five centuries , but also leap into electronic typesetting, remanining essentially unchanged.
+          </p>
+          <a class="started" href="#">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+   </section>
+
+   <!-- end about us sec -->
+   
+   <!-- start home our service -->
+   <section class="home-service pt-90 pb-90">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 xxx">
+          <div class="our-service">
+            <h5>OUR SERVICES</h5>
+            <h2> Explore our Main Services</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the    
+ 					industry's standard dummy text ever since the 1500s
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-30">
+     <div class="col-md-3 ">
+      <div class="testing se">
+        <div class="testing-img">
+          <img src="img/ic-1.png">
+        </div>
+        <div class="testing-text">
+          <h1>01</h1>
+          <h4>Pathology Testing</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the </p>
+          <a href="#">Read More...</a>
+        </div>
+      </div>
+     </div>
+     <div class="col-md-3 ">
+
+      <div class="testing se">
+        <div class="testing-img">
+          <img src="img/ic-2.png">
+        </div>
+        <div class="testing-text">
+          <h1>02</h1>
+          <h4>Dental Surgery</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  </p>
+          <a href="#">Read More...</a>
+        </div>
+      </div>
+     </div>
+      <div class="col-md-3 ">
+      <div class="testing se">
+        <div class="testing-img">
+          <img src="img/ic-2.png">
+        </div>
+        <div class="testing-text">
+          <h1>03</h1>
+          <h4>Clanging Dental</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  </p>
+          <a href="#">Read More...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 ">
+      <div class="testing se">
+        <div class="testing-img">
+          <img src="img/ic-1.png">
+        </div>
+        <div class="testing-text">
+          <h1>04</h1>
+          <h4>Labortary Analysis</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  </p>
+          <a href="#">Read More...</a>
+        </div>
+
+    
+
+   </section>
+
+   <!--end home our service -->
+   
+
+   <!-- start why choose us -->
+   <section class="choose-us">
+   <div class="row">
+    <div class="col-sm-6 pt-90">
+      <div class="why-choose">
+        <div class="why-choose-text">
+          <h4>WHY CHOOSE US</h4>
+          <h2>A great place to work<br> Great 
+						place to receive care</h2>
+        </div>
+        <ul class="why-choose-list">
+          <li>
+            <h2>01</h2>
+            <h5>CHOOSE CONFIDENTLY</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+          </li>
+          <li>
+            <h2>01</h2>
+            <h5>PRECISE DIAGNOSIS</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+          </li>
+          <li>
+            <h2>01</h2>
+            <h5>STAY HEALTHY</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-6 us-img">
+      <div class="why-choose-img">
+        
+      </div>
+    </div>
+   </div>
+   </section>
+   <!-- end why choose us -->
+
+   <!--  start book your visit -->
+    <section class="book-your-visit">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="emergency xxx">
+              <h2>Have an emergency?<br>
+                Book your visit now</h2>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="book-your xxx">
+              <form action="/action_page.php">
+                <div class="mb-3 mt-3">
+                  <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+                </div>
+                <div class="mb-3 mt-3">
+                  <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                </div>
+                <div class="mb-3 mt-3">
+                  <input type="text" class="form-control" id="phone" placeholder="Mobile" name="phone">
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="text" placeholder="Subject" name="text">
+                </div>
+                <div class="form-check mb-3">
+                  <label class="form-check-label">
+                    <input class="form-check-input bg-light" type="checkbox" name="remember"> Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary bbtt">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+   <!-- end book your visit -->
+
+
+   <!-- start footer section -->
+   <footer class="footer-section pt-90 pb-60">
+    <div class="container">
+      <div class="row">
+     <div class="col-md-4">
+      <div class="footer">
+        <div class="footer-heading">
+        <h3>About Us</h3>
+        <hr class="h-1">
+        <p>Lorem Ipsum is simply dummy text<br> of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard.
+        </p>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <div class="footer-img">
+            <i class="fa-solid fa-phone"></i>
+            <span>01025478654</span>
+          </div>
+          <div class="footer-img">
+            <i class="fa-solid fa-envelope"></i>
+            <span>dentalclinc32@gmail.com</span>
+          </div>
+          
+        </div>
+      </div>
+     </div>
+     <div class="col-md-4">
+      <div class="footer">
+        <div class="footer-heading">
+        <h3>Information</h3>
+        <hr class="h-2">
+        </div>
+          <ul class="footer-ul"></ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Meet our team</a></li>
+        <li><a href="#">Our portofilo</a></li>
+        <li><a href="#">Latest News</a></li>
+        </div>
+     
+      </div>
+      <div class="col-md-4">
+        <div class="footer">
+          <div class="footer-heading">
+          <h3>Helpful</h3>
+          <hr class="h-3">
+          </div>
+            <ul class="footer-ul"></ul>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Policy</a></li>
+          <li><a href="#">Help</a></li>
+          </div>
+       
+        </div>
+        <hr>
+        <div class="copy">
+          <ul class="icons">
+            <li><a href="#"><i class=" ii fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="#"><i class=" ii fa-brands fa-square-pinterest"></i></a></li>
+            <li><a href="#"><i class=" ii fa-brands fa-square-twitter"></i></a></li>
+            <li><a href="#"><i class=" ii fa-brands fa-linkedin"></i></a></li>
+          </ul>
+
+          <span>copyright 2022 by Attdentallab.com</span>
+
+        </div>
+
+    </div>
+
+   </footer>
+
+   <!-- end footer section -->
+
+    <script src="jquery-3.6.0.slim.min.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+</body>
+</html>
